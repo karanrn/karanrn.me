@@ -7,6 +7,8 @@ theme: "hugo-book"
 disablePathToLower: true
 enableGitInfo: true
 
+copyright: "Copright %copy; 2022, Karan Nadagoudar"
+
 params:
   BookTheme: "auto"
   BookToC: true
