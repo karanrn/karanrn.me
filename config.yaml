@@ -1,4 +1,4 @@
-baseURL: 'http://example.org/'
+baseURL: 'https://karanrn.github.io/'
 languageCode: 'en-us'
 title: 'Karan Nadagoudar'
 theme: "hugo-book"
