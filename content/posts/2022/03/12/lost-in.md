@@ -1,6 +1,8 @@
 ---
 title: "Lost In ..."
 date: 2022-03-12
+tags: [reflection]
+categories: [life]
 ---
 I am not sure if I can put my thoughts into the right words. Words are never neutral as we are bound by emotion in every action we take, with an anxious mind as mine simple statements/thoughts will take you spiraling down the bottomless pit. Long thoughts with a small pinch of worries are hard to summarize as they tend to lose their importance or hold on to the individual (read as me), it is soothing and tempting to dump your thoughts onto our journal or an article like this one. I have not grown/matured so much to have an epiphany, life is both harder and simpler with swings happening with every hour of the day.
 

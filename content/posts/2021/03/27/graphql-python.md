@@ -1,6 +1,8 @@
 ---
 title: "GraphQL: Query filtering with relay and graphene-python"
-date: 2021-03-27T14:52:54+05:30
+date: 2021-03-27
+tags: [graphql, python, graphene]
+categories: [tech, development]
 ---
 GraphQL is query language for API. It simplifies, isolates, and fastens the development and API releases. This post assumes the reader is aware of basics of GraphQL concepts like query, mutation, and schema. If you have stumbled here for introduction to GraphQL, please go through this [tutorial](https://graphql.org/learn/).
 
@@ -152,7 +154,7 @@ And response for the above query:
 For complete implementation of GraphQL in python using Flask, Graphene-Python, and SQLAlchemy, you can check the code on my [GitHub](https://github.com/karanrn/graphql-python).
 
 ---
-### References:
+### References
 1. [Introduction to GraphQL](https://www.howtographql.com/basics/0-introduction/)
 
 2. [Github GraphQL API](https://docs.github.com/en/graphql/guides/introduction-to-graphql#discovering-the-graphql-api)

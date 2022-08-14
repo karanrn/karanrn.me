@@ -1,6 +1,8 @@
 ---
 title: "What beach taught me?"
 date: 2019-05-27
+tags: [reflection, beach]
+categories: [life]
 ---
 Life is always a rough ride. There are weaker struggles as there are harder struggles. All of these struggles bring us the needed rewards.
 Life is filled with moments of giving and take. The more one gives the more stake one gets/takes. All the wins cannot be won without hardships. Once in a while life grounds us with greater force to realize our true self. It would be foolish to ignore them as mere coincidence, these high tidal hits gifts us the biggest learnings of life.

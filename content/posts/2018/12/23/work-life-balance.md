@@ -1,6 +1,8 @@
 ---
 title: "Work-Life balance?"
 date: 2018-12-23
+tags: [work]
+categories: [life]
 ---
 I used to believe there was no work life balance, when your work is teaching you. I came to conclusion, there is no work-life balance upon reading articles on the web commenting “if work is interesting, one does not need to have work-life balance”.
 

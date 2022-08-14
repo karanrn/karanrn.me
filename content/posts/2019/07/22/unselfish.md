@@ -1,6 +1,8 @@
 ---
 title: "(Un)Selfish"
 date: 2019-07-22
+tags: [self]
+categories: [life]
 ---
 My mother always told me to do good to others and luck will be with you. This very statement to others looks like being selfless and caring for others. But the act of selflessness never got into me because I do not see any act of any person as unselfish.
 

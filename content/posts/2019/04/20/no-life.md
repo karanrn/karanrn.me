@@ -1,6 +1,8 @@
 ---
 title: "No life?"
 date: 2019-04-20
+tags: [self]
+categories: [life]
 ---
 I have been “living” in my body for more than two decades now. I am listening to my whole life about “life” but never really made an attempt to live in the experience that lasts forever. I have added many tangible and intangible possessions and surely will have more, these timely priced possessions thought me to have just the comfortable life – just live but never gave an inkling of life with rich experience.
 

@@ -3,7 +3,15 @@ languageCode: 'en-us'
 title: 'Karan Nadagoudar'
 theme: "hugo-book"
 
-BookMenuBundle: /menu
+# Book configuration
+disablePathToLower: true
+enableGitInfo: true
+
+params:
+  BookTheme: "auto"
+  BookToC: true
+  BookRepo: https://github.com/karanrn/karanrn.github.io
+  BookSearch: true
 
 # menu:
 #   main:
