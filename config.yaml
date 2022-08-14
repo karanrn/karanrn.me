@@ -1,0 +1,19 @@
+baseURL: 'http://example.org/'
+languageCode: 'en-us'
+title: 'Karan Nadagoudar'
+theme: "hugo-book"
+
+BookMenuBundle: /menu
+
+# menu:
+#   main:
+#   - identifier: about
+#     name: about
+#     url: /about/
+#     params:
+#       class: highlight-menu-item
+#     weight: -110
+#   - identifier: posts
+#     name: posts
+#     url: /posts/
+#     weight: -100

@@ -1,0 +1,15 @@
+---
+title: "Work-Life balance?"
+date: 2018-12-23
+---
+I used to believe there was no work life balance, when your work is teaching you. I came to conclusion, there is no work-life balance upon reading articles on the web commenting “if work is interesting, one does not need to have work-life balance”.
+
+Lately, I have started to hate going to work. I never experienced burnout, I guess I am making my way to it (or made it). A year ago, I was an employee with full of energy to give out more to my employer in the process of reinventing one self. But now I just want to complete the mile (no extra miles) to end my day. I have come from not believing to propagating work-life balance to my colleagues. I do not have a specific reason for this change, multiple reasons may have compounded the effect on to me.
+
+Is work-life balance necessary? Yes, it is necessary. We are beautiful creatures who have ability to separate different tasks at our hand, but most of us get stuck at one thing most of our day (work). Our work has become recurring event of our daily activities (besides working hours), affecting our efficiency leading to a stressful life. For someone like me, who hates/fears to step away from work to avoid more work or having no courage to move out of the zone adds more stress to your unhappy life. You can be happy by avoiding empathy with your work/employer but it is difficult route to take when one has given most of himself to betterment of work and growth of the company. Other choice would be to have the courage to speak up to your boss/employer about your preferences on work and life.
+
+Work-Life balance is very much essential to have better productive work and happy life. For beginners, it might seem foolish to separate out work from life because it might look unproductive or less dedication to their work. And for people putting out their soul into work for building the brand of the company, work-life balance does not dictate their moves but they will be losing out something costly or dearly to their lives – happiness. You may be a workhorse and feel proud about it, but think again about what it is costing your life with? I am not here to disorient people willing to become workhorse and still define happier life with their own defined balance between work and life (or work is life for some).
+
+Breaking the regular pattern might be hard because of your ethics or fear to hurt the impression of your own self. Sometimes, it becomes hard to choose the options given. For me, I have little courage to hurt my impression by rowing my boat against the direction of wind. I am struggling to choose between the options of staying a loyal employee in building the company (suppressing my happiness) and conveying my thoughts to my employer about my preferences (shattering my employer’s plans for my happiness).
+
+Is it wise to stay true and selfish at times for a happier life or do good deeds and selfless work for a better impression in the eyes of the world?
