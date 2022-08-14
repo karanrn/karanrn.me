@@ -1,6 +1,6 @@
 ---
 title: "God and Man"
-date: 2018-12-23
+date: 2016-08-08
 tags: [god, man]
 categories: [life]
 ---
