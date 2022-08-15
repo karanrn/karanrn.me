@@ -3,7 +3,7 @@ h3, h2 {
 	border-bottom-width: 1px;
 }
 
-ol, ul {
+/* ol, ul {
     display: block;
     list-style-type: decimal;
     margin-block-start: 1em;
@@ -12,7 +12,7 @@ ol, ul {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 	list-style-type: none;
-}
+} */
 
 .recent-posts {
 	display: block;
@@ -26,8 +26,23 @@ ol, ul {
 	padding: 0;
 }
 
-.recent-posts li a {
-	font-size: 11pt;
+.recent-posts li {
+    float: none;
+    font-size: 8pt;
+    color: #777777;
+	margin-bottom: 10px;
+    a {
+        font-size: 11pt;
+    }
+}
+
+.book-page article h1 a{
+    font-size: 16pt;
+}
+
+.book-post h2 a {
+    font-size: 14pt;
+    border-bottom: none;
 }
 
 a {
@@ -42,12 +57,6 @@ a {
 
 a:hover {
 	text-decoration-color: yellow;
-}
-li {
-    float: none;
-    font-size: 8pt;
-    color: #777777;
-	margin-bottom: 10px;
 }
 
 .date1 {
