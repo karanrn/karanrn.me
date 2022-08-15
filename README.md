@@ -1,2 +1,1 @@
-# karanrn.github.io
-My personal website built using Hugo
+My personal blog built using Hugo
