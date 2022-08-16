@@ -10,12 +10,10 @@ enableGitInfo: false
 copyright: "Copright %copy; 2022, Karan Nadagoudar"
 
 params:
-  BookTheme: "auto"
+  BookTheme: "light"
   BookToC: true
   BookRepo: https://github.com/karanrn/karanrn.github.io
   BookSearch: true
-  favicon: "assets/img/favicon-16x16.png"
-  custom_css: ["css/custom.css"]
 
 # menu:
 #   main:
