@@ -15,15 +15,8 @@ params:
   BookRepo: https://github.com/karanrn/karanrn.github.io
   BookSearch: true
 
-# menu:
-#   main:
-#   - identifier: about
-#     name: about
-#     url: /about/
-#     params:
-#       class: highlight-menu-item
-#     weight: -110
-#   - identifier: posts
-#     name: posts
-#     url: /posts/
-#     weight: -100
+menu:
+  after:
+  - name: movies
+    url: https://letterboxd.com/karan4080/
+    weight: 110
