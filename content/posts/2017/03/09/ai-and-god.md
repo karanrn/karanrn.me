@@ -1,8 +1,7 @@
 ---
 title: "AI and God"
 date: 2017-03-09
-tags: ["ai", "god"]
-categories: ["tech"]
+categories: ["tech", "AI", "god"]
 ---
 History books never show such progress in Artificial Intelligence (AI) as today. Greater support from big names like Google, Facebook, and Microsoft has spearheaded the progress in the field. The stronger foundation was laid by Alan Turing in 1950 with his thesis famously known as "Turing Test". And even the great man predicted 2000s would be year of AI. But due to failure in technological advancements and fear over ungoverned AI led to winters for decades together leading to no growth in respective field.
 

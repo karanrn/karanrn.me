@@ -1,8 +1,7 @@
 ---
 title: "Human and Machine"
 date: 2015-09-24
-tags: ["ai", "machine", "intelligence"]
-categories: ["tech"]
+categories: ["tech", "AI"]
 ---
 What is Intelligence? It is comprised of logic,understanding,self-awareness,creativity, planning and so on, which elevates humans from other animals (of course we humans are animals). The people review one’s intelligence quotient with stupid, illogical tests and rate them with score. But we are meant to use our intelligence beyond what is known and not let those groundless tests alias quizzes mark our intelligence.
 

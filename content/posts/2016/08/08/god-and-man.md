@@ -1,8 +1,7 @@
 ---
 title: "God and Man"
 date: 2016-08-08
-tags: [god, man]
-categories: [life]
+categories: ["god"]
 ---
 Existence of him has long been a question to us from the beginning of our consciousness. Scientists are finding him by unwrapping the truths to our existence by understanding the beginning of us and our universes’ (contrary to multiple universes) existence. Religionists find him in holy books and places they preached and constructed for. And some abide by his rules while some disregard him as their creator. Just the question of his existence has led many kind of wars and people around the world, atheist v/s theists, one god v/s many god believers, scientists v/s religionists, people who fear to those who love. Throughout the history of mankind, we have searched and found relief in the belief of his existence. We the mankind have created him and his religions, whereas many go against this notion of their creator. Some believe in the prophecies and teachings of their religion, while some question the same teachings.
 

@@ -1,7 +1,6 @@
 ---
 title: "Gifts"
 date: 2016-11-18
-tags: ["gift"]
 categories: ["life"]
 ---
 Are they given or taken?

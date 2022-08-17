@@ -1,7 +1,6 @@
 ---
 title: "Her"
 date: 2017-05-14
-tags: ["mother"]
 categories: ["mother"]
 ---
 Things of my world have changed irrespective of changes in the world but one that never changed is her.

@@ -1,7 +1,6 @@
 ---
 title: "The advent of the technology"
 date: 2015-05-01
-tags: ["influence"]
 categories: ["tech", "life"]
 ---
 The people now-a-days are quite well used and tuned to the technology. It has helped us getting solutions for the problems and at the same time making new problems to us. Now you may be thinking about the boon and bane of the Technology with and to our life.

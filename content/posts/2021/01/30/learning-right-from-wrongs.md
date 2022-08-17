@@ -1,8 +1,7 @@
 ---
 title: "Learning right from wrongs"
 date: 2021-01-30
-tags: [reflection]
-categories: [life]
+categories: ["life"]
 ---
 > Learn from the mistakes of others! You can’t live long enough to make them all yourselves. – Chanakya
 

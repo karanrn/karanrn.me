@@ -11,7 +11,7 @@ copyright: "Copright %copy; 2022, Karan Nadagoudar"
 
 params:
   BookTheme: "light"
-  BookToC: true
+  BookToC: false
   BookRepo: https://github.com/karanrn/karanrn.me
   BookSearch: true
 

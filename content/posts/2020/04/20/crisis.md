@@ -1,8 +1,7 @@
 ---
 title: "Crisis"
 date: 2020-04-20
-tags: [hope]
-categories: [life]
+categories: ["life"]
 ---
 The world is in crisis with COVID-19, people are forced to stay in lockdown to prevent the spread of the disease. People and organizations are faced with new challenges, they have become conscious about health and their spending respectively. The world has become essential in terms of spending, economies are suffering as people are content with their needs instead of their greed.
 

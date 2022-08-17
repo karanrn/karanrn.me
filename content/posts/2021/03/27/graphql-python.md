@@ -1,8 +1,7 @@
 ---
 title: "GraphQL: Query filtering with relay and graphene-python"
 date: 2021-03-27
-tags: [graphql, python, graphene]
-categories: [tech, development]
+categories: ["tech", "development"]
 ---
 GraphQL is query language for API. It simplifies, isolates, and fastens the development and API releases. This post assumes the reader is aware of basics of GraphQL concepts like query, mutation, and schema. If you have stumbled here for introduction to GraphQL, please go through this [tutorial](https://graphql.org/learn/).
 

@@ -1,8 +1,7 @@
 ---
 title: "Living with No Goals"
 date: 2020-09-08
-tags: [goals]
-categories: [life]
+categories: ["life"]
 ---
 > “What keeps me going is goals” – Muhammad Ali
 
