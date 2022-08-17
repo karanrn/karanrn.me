@@ -16,7 +16,7 @@
         <ol class="recent-posts">
         {{ range (where .Site.RegularPages "Type" "posts" | first 10 )}}
             <li>
-                <a href="{{ .Permalink }}">{{ .Title }}  </a><span class="date1">{{ dateFormat "2006-02-02" .Date }}</span>
+                <a href="{{ .Permalink }}">{{ .Title }}  </a><span class="date1">{{ dateFormat "2006-01-02" .Date }}</span>
             </li>
         {{ end }}
         </ol>
