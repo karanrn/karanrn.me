@@ -12,7 +12,7 @@ copyright: "Copright %copy; 2022, Karan Nadagoudar"
 params:
   BookTheme: "light"
   BookToC: true
-  BookRepo: https://github.com/karanrn/karanrn.github.io
+  BookRepo: https://github.com/karanrn/karanrn.me
   BookSearch: true
 
 menu:
