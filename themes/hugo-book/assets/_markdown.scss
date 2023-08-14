@@ -53,10 +53,11 @@
   }
 
   a {
-    text-decoration: none;
+    text-decoration: none !important;
 
     &:hover {
       text-decoration: underline;
+      color: lightgoldenrodyellow;
     }
     &:visited {
       color: var(--color-visited-link);
