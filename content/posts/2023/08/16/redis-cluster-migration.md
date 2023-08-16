@@ -5,7 +5,7 @@ categories: ["tech"]
 ---
 >Writing something after a very long time, putting this out as I could not find proper documentation for this task.
 
-Redis<sup>[[1]](https://redis.io/)</sup> has become a de-facto standard for caching and all the use cases of in-memory stores so we chose Redis for caching purposes. Our team offers Platform as a Service (PaaS) which offers Redis to a few of the customers, and we run our components on Kubernetes (K8s).
+Redis <sup>[[1]](https://redis.io/)</sup> has become a de-facto standard for caching and all the use cases of in-memory stores so we chose Redis for caching purposes. Our team offers Platform as a Service (PaaS) which offers Redis to a few of the customers, and we run our components on Kubernetes (K8s).
 
 We chose the K8s operator<sup>[[2]](https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator)</sup> way to deploy and manage Redis clusters but we faced issues with the chosen operator so had to move away from it to deploy a stable Redis cluster that can reconcile with changes on K8s cluster like K8s upgrades and restarts. 
 
@@ -70,8 +70,12 @@ tls = true
 This post is only for usage of the sync feature from the RedisShake tool, it offers restore and scan features too. Following the above steps helped us to migrate data between Redis clusters running on K8s.
 
 ---
-References: <br>
-[1] https://redis.io/ <br>
-[2] https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator <br>
-[3] https://redis.io/commands/migrate/ <br>
+### References:
+
+[1] https://redis.io/
+
+[2] https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator
+
+[3] https://redis.io/commands/migrate/
+
 [4] https://github.com/tair-opensource/RedisShake

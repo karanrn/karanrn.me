@@ -20,3 +20,8 @@ menu:
   - name: movies
     url: https://letterboxd.com/karan4080/
     weight: 110
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
