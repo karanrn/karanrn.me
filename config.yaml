@@ -25,3 +25,5 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+enableRobotsTXT: true
