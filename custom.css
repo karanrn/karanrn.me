@@ -1,3 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+html,
+body,
+button,
+input,
+select,
+textarea,
+.site-header,
+.book-page,
+.book-footer,
+.markdown,
+.markdown *,
+code,
+kbd,
+pre,
+samp {
+    font-family: 'IBM Plex Mono', 'Roboto Mono', monospace;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 28px 16px 12px;
+}
+
+.site-title {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px 18px;
+}
+
+.site-header a {
+    border-bottom: 0;
+}
+
+.container {
+    max-width: 56rem;
+}
+
+.book-page {
+    min-width: 0;
+    padding-top: 1rem;
+}
+
+.book-header,
+.book-toc {
+    display: none;
+}
+
+.post-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    align-items: baseline;
+}
+
+.post-row h2 {
+    margin: 0;
+}
+
+.post-row a {
+    min-width: 0;
+}
+
+.post-date,
+.date1 {
+    color: #777777;
+    font-size: 10pt;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
 h3, h2 {
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
@@ -56,13 +139,11 @@ a {
 }
 
 a:hover {
+	background-color: lightgoldenrodyellow;
 	text-decoration-color: yellow;
 }
 
 .date1 {
-    float: none;
-    font-size: 8pt;
-    color: #777777;
     text-transform: lowercase;
 }
 
@@ -94,6 +175,24 @@ aside nav ul li a {
     max-width: calc(var(--main-width) + var(--gap) * 2);
     margin: auto;
     padding: calc((var(--footer-height) - var(--gap))/2)var(--gap);
+    padding-top: 56px;
     text-align: center;
     line-height: 24px;
+}
+
+@media screen and (max-width: 40rem) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .site-nav {
+        justify-content: flex-start;
+    }
+
+    .post-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
 }
