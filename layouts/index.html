@@ -12,11 +12,11 @@
       </div>
       <br style="line-height:5;">
       <div>
-        <h3>recent</h3>
+        <h3>posts</h3>
         <ol class="recent-posts">
         {{ range (where .Site.RegularPages "Type" "posts" | first 10 )}}
-            <li>
-                <a href="{{ .Permalink }}">{{ .Title }}  </a><span class="date1">{{ dateFormat "2006-01-02" .Date }}</span>
+            <li class="post-row">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="date1">{{ dateFormat "2006-01-02" .Date }}</span>
             </li>
         {{ end }}
         </ol>

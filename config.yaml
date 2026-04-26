@@ -6,6 +6,9 @@ theme: "hugo-book"
 # Book configuration
 disablePathToLower: true
 enableGitInfo: false
+disableKinds:
+  - taxonomy
+  - term
 
 copyright: "Copright %copy; 2025, Karan Nadagoudar"
 

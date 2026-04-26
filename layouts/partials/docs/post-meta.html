@@ -1,15 +1,7 @@
 {{ with .Date }}
-  <h5>{{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}</h5>
-{{ end }}
-
-{{ range $taxonomy, $_ := .Site.Taxonomies }}
-  {{ with $terms := $.GetTerms $taxonomy }}
-  <div>
-    {{ range $n, $term := $terms }}{{ if $n }}, {{ end }}
-      <a href="{{ $term.RelPermalink }}">{{ $term.Title }}</a>
-    {{- end }}
-  </div>
-  {{ end }}
+  <time class="post-date" datetime="{{ .Format "2006-01-02" }}">
+    {{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}
+  </time>
 {{ end }}
 
 {{ if .Params.image }}

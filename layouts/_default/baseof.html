@@ -16,15 +16,24 @@
   gtag('config', 'G-QSDLPEQXJ5');
 </script>
 <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <header class="site-header">
+    <a class="site-title" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="{{ .Site.Home.RelPermalink }}">home</a>
+      {{ with .Site.GetPage "section" "posts" }}
+        <a href="{{ .RelPermalink }}">posts</a>
+      {{ end }}
+      {{ with .Site.GetPage "page" "about" }}
+        <a href="{{ .RelPermalink }}">about</a>
+      {{ end }}
+      {{ range .Site.Menus.after }}
+        {{ if and (ne .URL "/posts/") (ne .URL "/about/") }}
+          <a href="{{ .URL }}"{{ if or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+      {{ end }}
+    </nav>
+  </header>
   <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        {{ template "menu" . }} <!-- Left menu Content -->
-      </div>
-    </aside>
-
     <div class="book-page">
       <header class="book-header">
         {{ template "header" . }} <!-- Mobile layout header -->
@@ -41,8 +50,6 @@
       </footer>
 
       {{ template "comments" . }} <!-- Comments block -->
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
     {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
