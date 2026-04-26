@@ -20,9 +20,6 @@
     <a class="site-title" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="{{ .Site.Home.RelPermalink }}">home</a>
-      {{ with .Site.GetPage "section" "posts" }}
-        <a href="{{ .RelPermalink }}">posts</a>
-      {{ end }}
       {{ with .Site.GetPage "page" "about" }}
         <a href="{{ .RelPermalink }}">about</a>
       {{ end }}
