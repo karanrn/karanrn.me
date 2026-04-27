@@ -10,7 +10,10 @@ disableKinds:
   - taxonomy
   - term
 
-copyright: "Copright %copy; 2025, Karan Nadagoudar"
+copyright: "Copright %copy; 2026, Karan Nadagoudar"
+
+permalinks:
+  posts: /posts/:filename/
 
 params:
   BookTheme: "light"
@@ -20,6 +23,9 @@ params:
 
 menu:
   after:
+  - name: reading
+    url: https://www.goodreads.com/user/show/37190680-karan
+    weight: 100
   - name: movies
     url: https://letterboxd.com/karan4080/
     weight: 110
