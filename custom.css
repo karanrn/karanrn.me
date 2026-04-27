@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 
+:root {
+    --body-background: #f3f0e8;
+}
+
 html,
 body,
 button,
@@ -16,6 +20,19 @@ kbd,
 pre,
 samp {
     font-family: 'IBM Plex Mono', 'Roboto Mono', monospace;
+}
+
+html,
+body,
+.site-header,
+.container,
+.book-page,
+.book-footer {
+    background-color: #f3f0e8;
+}
+
+body {
+    min-width: 0;
 }
 
 .site-header {
@@ -46,11 +63,13 @@ samp {
 
 .container {
     max-width: 56rem;
+    width: 100%;
 }
 
 .book-page {
     min-width: 0;
     padding-top: 1rem;
+    width: 100%;
 }
 
 .book-header,
@@ -71,6 +90,7 @@ samp {
 
 .post-row a {
     min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .post-date,
@@ -138,6 +158,15 @@ a {
 	text-decoration: none;
 }
 
+.markdown {
+    overflow-wrap: break-word;
+}
+
+.markdown pre,
+.markdown table {
+    max-width: 100%;
+}
+
 a:hover {
 	background-color: lightgoldenrodyellow;
 	text-decoration-color: yellow;
@@ -181,18 +210,57 @@ aside nav ul li a {
 }
 
 @media screen and (max-width: 40rem) {
+    .site-header,
+    .container {
+        max-width: none;
+        width: 100%;
+    }
+
     .site-header {
         align-items: flex-start;
         flex-direction: column;
         gap: 12px;
+        padding: 20px 16px 8px;
     }
 
     .site-nav {
         justify-content: flex-start;
+        gap: 8px 14px;
     }
 
     .post-row {
         grid-template-columns: 1fr;
-        gap: 4px;
+        gap: 2px;
+        margin-bottom: 16px;
+    }
+
+    .book-page {
+        padding: 12px 16px;
+    }
+
+    .book-page article h1 a {
+        font-size: 15pt;
+        line-height: 1.25;
+    }
+
+    .book-post h2 a,
+    .recent-posts li a {
+        font-size: 11pt;
+        line-height: 1.35;
+    }
+
+    .post-date,
+    .date1 {
+        font-size: 9pt;
+    }
+
+    h1,
+    h2,
+    h3 {
+        line-height: 1.25;
+    }
+
+    a {
+        line-height: 1.35;
     }
 }
