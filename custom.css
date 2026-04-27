@@ -90,7 +90,7 @@ body {
 
 .post-row a {
     min-width: 0;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .post-date,
@@ -162,6 +162,50 @@ a {
     overflow-wrap: break-word;
 }
 
+.markdown code,
+.markdown pre,
+.markdown pre code,
+.markdown .highlight,
+.markdown .highlight pre,
+.markdown .highlight code,
+.markdown .highlight span {
+    color: #000000 !important;
+    font-family: 'IBM Plex Mono', 'Roboto Mono', monospace;
+}
+
+.markdown code {
+    background-color: #ede8dc;
+    border: 1px solid #d8d0c0;
+    border-radius: 0;
+    font-size: 0.9em;
+    padding: 0 0.25rem;
+}
+
+.markdown pre,
+.markdown .highlight {
+    background-color: #e8e1d3 !important;
+    border: 1px solid #d8d0c0;
+    border-radius: 0;
+    margin: 1rem 0;
+}
+
+.markdown pre {
+    padding: 0.9rem 1rem;
+}
+
+.markdown pre code,
+.markdown .highlight code {
+    background: transparent !important;
+    border: 0;
+    padding: 0;
+}
+
+.markdown .highlight pre {
+    background: transparent !important;
+    border: 0;
+    margin: 0;
+}
+
 .markdown pre,
 .markdown table {
     max-width: 100%;
@@ -229,8 +273,8 @@ aside nav ul li a {
     }
 
     .post-row {
-        grid-template-columns: 1fr;
-        gap: 2px;
+        grid-template-columns: minmax(0, 1fr) max-content;
+        gap: 8px;
         margin-bottom: 16px;
     }
 
