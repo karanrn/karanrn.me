@@ -25,6 +25,17 @@ jobs:
           hugo-version: '0.168.0'
           extended: true
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Refreshes data/books.yaml; on failure the build uses the committed copy.
+      - name: Sync Goodreads
+        run: |
+          pip install pyyaml
+          make books || echo "::warning::Goodreads sync failed, building with committed data/books.yaml"
+
       - name: Build
         run: hugo --minify
 

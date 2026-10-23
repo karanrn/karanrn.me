@@ -23,9 +23,6 @@ params:
 
 menu:
   after:
-  - name: reading
-    url: https://www.goodreads.com/user/show/37190680-karan
-    weight: 100
   - name: movies
     url: https://letterboxd.com/karan4080/
     weight: 110

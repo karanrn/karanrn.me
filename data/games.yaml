@@ -1,0 +1,107 @@
+# Rendered in this order on /games/. Source covers live in assets/images/games/<image>.
+# To add a game, add a `- title:` entry and run `make covers`: it fills in `image:` and
+# downloads the cover (Steam, else Wikipedia). If it picks the wrong cover, delete the
+# image file, set `steam_id:` (from the store URL) or `cover_url:`, and run it again.
+# Optional fields:
+#   rating:   0.5–5 in steps of 0.5, shown as stars (e.g. 3.5 → ★★★½); omit if unrated
+#   status:   playing | stopped, shown under the cover
+#   note:     with status: stopped, shown under "stopped" (e.g. "chapter 7");
+#             otherwise shown on hover via the ≡ icon
+#   favorite: true to also show it in the "favorite games" row at the top (4 fit per row)
+- title: "Assassin's Creed Odyssey"
+  image: assassins-creed-odyssey.jpg
+  favorite: true
+  rating: 4.5
+- title: "Assassin's Creed Valhalla"
+  image: assassins-creed-valhalla.jpg
+  favorite: false
+  rating: 3.5
+- title: "Assassin's Creed Origins"
+  image: assassins-creed-origins.jpg
+  favorite: false
+  rating: 3.5
+- title: "Shadow of the Tomb Raider"
+  image: shadow-of-the-tomb-raider.jpg
+  favorite: false
+  rating: 3.5
+- title: "Yakuza 0"
+  image: yakuza-0.jpg
+  status: stopped
+  note: "chapter 7"
+  favorite: false
+  rating: 2.0
+- title: "Gotham Knights"
+  image: gotham-knights.jpg
+  favorite: false
+  rating: 3.0
+- title: "Red Dead Redemption 2"
+  image: red-dead-redemption-2.jpg
+  status: stopped
+  note: "chapter 2"
+  favorite: false
+  rating: 4.0
+- title: "Batman: Arkham Knight"
+  image: batman-arkham-knight.jpg
+  favorite: false
+  rating: 3.5
+- title: "Batman: Arkham Origins"
+  image: batman-arkham-origins.jpg
+  favorite: false
+  rating: 4.0
+- title: "Spider-Man: Miles Morales"
+  image: spider-man-miles-morales.jpg
+  favorite: false
+  rating: 4.0
+- title: "Metal Gear Solid V: The Phantom Pain"
+  image: metal-gear-solid-v-the-phantom-pain.jpg
+  favorite: true
+  rating: 4.0
+- title: "Assassin's Creed Mirage"
+  image: assassins-creed-mirage.jpg
+  favorite: false
+  rating: 3.5
+- title: "Ghost of Tsushima"
+  image: ghost-of-tsushima.jpg
+  favorite: true
+  rating: 4.0
+- title: "Spider-Man"
+  image: spider-man.jpg
+  favorite: true
+  rating: 4.5
+- title: "Spider-Man 2"
+  image: spider-man-2.jpg
+  favorite: true
+  rating: 4.5
+- title: "Sleeping Dogs"
+  image: sleeping-dogs.jpg
+  favorite: true
+  rating: 4.0
+- title: "God of War"
+  image: god-of-war.jpg
+  favorite: true
+  rating: 4.5
+- title: "Uncharted 4: A Thief's End"
+  image: uncharted-4-a-thiefs-end.jpg
+  favorite: true
+  rating: 5.0
+- title: "Uncharted: The Lost Legacy"
+  image: uncharted-the-lost-legacy.jpg
+  favorite: false
+  rating: 3.5
+- title: "Assassin's Creed II"
+  image: assassins-creed-2.jpg
+  favorite: false
+  rating: 4.0
+- title: "Assassin's Creed Brotherhood"
+  image: assassins-creed-brotherhood.jpg
+  favorite: false
+  rating: 3.5
+- title: "Assassin's Creed Revelations"
+  image: assassins-creed-revelations.jpg
+  favorite: false
+  rating: 3.5
+- title: "Assassin's Creed Shadows"
+  image: assassins-creed-shadows.jpg
+  favorite: false
+  status: playing
+  rating: 4.0

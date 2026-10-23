@@ -308,3 +308,196 @@ aside nav ul li a {
         line-height: 1.35;
     }
 }
+
+.games-page h2 {
+    border-bottom: 1px solid #d8d0c0;
+    color: #777777;
+    font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    margin: 1.5rem 0 1rem;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.markdown .games {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 18px 12px;
+    list-style: none;
+    margin: 0 0 2.5rem;
+    padding: 0;
+}
+
+.markdown .games-favorites {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.games .game {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0;
+}
+
+.games img {
+    aspect-ratio: 2 / 3;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    display: block;
+    height: auto;
+    object-fit: cover;
+    transition: border-color 0.15s;
+    width: 100%;
+}
+
+.games .game:hover img {
+    border-color: #000000;
+}
+
+.game-meta {
+    align-items: center;
+    color: #777777;
+    display: flex;
+    gap: 6px;
+    font-size: 10pt;
+    line-height: 1;
+    min-height: 1em;
+}
+
+.game-rating {
+    font-family: system-ui, sans-serif;
+    font-size: 13pt;
+    letter-spacing: 0.04em;
+}
+
+.game-status {
+    color: #777777;
+    font-size: 8.5pt;
+    line-height: 1.3;
+}
+
+.game-status-note {
+    display: block;
+    padding-left: 1.1em;
+}
+
+.game-status-playing {
+    color: #2f7d32;
+}
+
+.game-note {
+    cursor: help;
+    font-size: 12pt;
+}
+
+@media screen and (max-width: 40rem) {
+    .markdown .games {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px 10px;
+    }
+
+    .markdown .games-favorites {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Reading page: rows like the post list, with stars and finish date on the right. */
+.books-page h2 {
+    border-bottom: 1px solid #d8d0c0;
+    color: #777777;
+    font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    margin: 2rem 0 0.5rem;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.books-count {
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+
+.markdown .books {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.markdown .books .book {
+    align-items: baseline;
+    border-bottom: 1px dashed #e2dccf;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.book-main {
+    line-height: 1.35;
+    min-width: 0;
+}
+
+.markdown .book-title {
+    border-bottom: 0;
+    font-size: 11pt;
+    line-height: 1.35;
+}
+
+.book-sub {
+    color: #777777;
+    font-size: 9pt;
+}
+
+.book-author {
+    color: #777777;
+    display: block;
+    font-size: 9pt;
+    margin-top: 2px;
+}
+
+.book-side {
+    align-items: baseline;
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.game-rating.book-rating {
+    color: #777777;
+    font-size: 11pt;
+}
+
+.book-date {
+    color: #777777;
+    font-size: 9pt;
+    font-weight: 700;
+    min-width: 3.6em;
+    text-align: right;
+}
+
+.books-source {
+    color: #777777;
+    font-size: 9pt;
+    margin-top: 2rem;
+}
+
+.markdown .books-source a {
+    font-size: 9pt;
+}
+
+@media screen and (max-width: 40rem) {
+    .markdown .books .book {
+        gap: 8px;
+    }
+
+    .book-side {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2px;
+    }
+}

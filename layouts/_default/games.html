@@ -1,0 +1,73 @@
+{{ define "main" }}
+<article class="markdown games-page">
+  {{ $favorites := where site.Data.games "favorite" true }}
+  {{ with $favorites }}
+  <h2>favorite games</h2>
+  <ul class="games games-favorites">
+    {{ range . }}{{ partial "game-card" (dict "game" . "sizes" "(max-width: 40rem) 45vw, 210px" "eager" true) }}{{ end }}
+  </ul>
+  {{ end }}
+
+  <h2>played</h2>
+  <ol class="games">
+    {{ range site.Data.games }}{{ partial "game-card" (dict "game" . "sizes" "(max-width: 40rem) 30vw, 140px") }}{{ end }}
+  </ol>
+  {{- .Content -}}
+</article>
+{{ end }}
+
+{{ define "toc" }}{{ end }}
+
+{{/* Covers are served as small WebP variants; `sizes` is the card's rendered width so the
+     browser downloads only the variant it needs. */}}
+{{ define "_partials/game-card" }}
+{{ $sizes := .sizes }}
+{{/* Favorites are above the fold, so don't lazy-load them. */}}
+{{ $loading := cond (.eager | default false) "eager" "lazy" }}
+{{ with .game }}
+{{ $title := .title }}
+{{ $cover := "" }}
+{{ if not .image }}
+  {{ errorf "data/games.yaml: %q has no image, run `make covers`" $title }}
+{{ else }}
+  {{ $cover = resources.Get (printf "images/games/%s" .image) }}
+  {{ if not $cover }}
+    {{ errorf "data/games.yaml: no cover for %q at assets/images/games/%s, run `make covers`" $title .image }}
+  {{ end }}
+{{ end }}
+{{ $srcset := slice }}
+{{ $fallback := "" }}
+{{ range slice 150 200 300 }}
+  {{ $img := $cover.Resize (printf "%dx webp q60 Lanczos" .) }}
+  {{ $srcset = $srcset | append (printf "%s %dw" $img.RelPermalink .) }}
+  {{ $fallback = $img }}
+{{ end }}
+{{ $label := $title }}
+{{ with .note }}{{ $label = printf "%s (%s)" $label . }}{{ end }}
+<li class="game" title="{{ $label }}">
+  <img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ $sizes }}" alt="{{ .title }}" width="300" height="450" loading="{{ $loading }}" decoding="async">
+  <span class="game-meta">
+    {{ with .rating }}
+      {{ $r := float . }}
+      {{ if or (lt $r 0.5) (gt $r 5.0) (ne (mul $r 2) (float (int (mul $r 2)))) }}
+        {{ errorf "data/games.yaml: rating for %q must be 0.5–5 in steps of 0.5, got %v" $title . }}
+      {{ end }}
+      {{ $full := int (math.Floor $r) }}
+      <span class="game-rating" aria-label="{{ $r }} out of 5">{{ strings.Repeat $full "★" }}{{ if ne (float $full) $r }}½{{ end }}</span>
+    {{ end }}
+    {{ if and .note (ne .status "stopped") }}<span class="game-note" title="{{ .note }}" aria-label="{{ .note }}">≡</span>{{ end }}
+  </span>
+  {{ with .status }}
+    {{ if not (in (slice "playing" "stopped") .) }}
+      {{ errorf "data/games.yaml: status for %q must be playing or stopped, got %q" $title . }}
+    {{ end }}
+  {{ end }}
+  {{ if eq .status "playing" }}
+  <span class="game-status game-status-playing">● playing</span>
+  {{ else if eq .status "stopped" }}
+    {{ if not .note }}{{ errorf "data/games.yaml: %q is stopped but has no note saying where" $title }}{{ end }}
+  <span class="game-status game-status-stopped">■ stopped<span class="game-status-note">{{ .note }}</span></span>
+  {{ end }}
+</li>
+{{ end }}
+{{ end }}

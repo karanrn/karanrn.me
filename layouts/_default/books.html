@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{ $books := site.Data.books }}
+<article class="markdown books-page">
+  {{ with $books.reading }}
+  <h2>currently reading</h2>
+  <ul class="books">
+    {{ range . }}{{ partial "book-row" . }}{{ end }}
+  </ul>
+  {{ end }}
+
+  {{ $years := slice }}
+  {{ range $books.read }}{{ $years = $years | append .year }}{{ end }}
+  {{ range uniq $years }}
+    {{ $group := where $books.read "year" . }}
+    <h2>{{ . }} <span class="books-count">· {{ len $group }} {{ cond (eq (len $group) 1) "book" "books" }}</span></h2>
+    <ul class="books">
+      {{ range $group }}{{ partial "book-row" . }}{{ end }}
+    </ul>
+  {{ end }}
+
+  {{- .Content -}}
+  <p class="books-source">synced from <a href="{{ $books.profile }}">goodreads</a></p>
+</article>
+{{ end }}
+
+{{ define "toc" }}{{ end }}
+
+{{ define "_partials/book-row" }}
+<li class="book">
+  <span class="book-main">
+    <a class="book-title" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
+    {{- with .subtitle }}<span class="book-sub">: {{ . }}</span>{{ end }}
+    {{- with .series }}<span class="book-sub"> ({{ . }})</span>{{ end }}
+    <span class="book-author">{{ .author }}</span>
+  </span>
+  <span class="book-side">
+    {{ with .rating }}<span class="game-rating book-rating" aria-label="{{ . }} out of 5">{{ strings.Repeat (int .) "★" }}</span>{{ end }}
+    {{ with .read }}<time class="book-date" datetime="{{ . }}">{{ (time.AsTime .).Format "Jan 02" | lower }}</time>{{ end }}
+  </span>
+</li>
+{{ end }}
