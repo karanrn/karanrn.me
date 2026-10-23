@@ -88,6 +88,10 @@
   image: uncharted-the-lost-legacy.jpg
   favorite: false
   rating: 3.5
+- title: "Assassin's Creed Unity"
+  image: assassins-creed-unity.jpg
+  favorite: false
+  rating: 3.5
 - title: "Assassin's Creed II"
   image: assassins-creed-2.jpg
   favorite: false
