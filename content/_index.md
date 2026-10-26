@@ -1,3 +1,6 @@
+---
+description: "Karan Nadagoudar is a platform engineer at Nutanix, writing about technology and lessons from life."
+---
 \
 I am Karan, a platform engineer at [Nutanix](https://www.nutanix.com/). I speak and write about learnings from happenings and mishappenings in life.
 More [here](about/)

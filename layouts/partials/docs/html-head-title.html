@@ -1,1 +1,5 @@
-{{- "Karan Nadagoudar" -}}
+{{- if .IsHome -}}
+  {{- site.Params.author -}}
+{{- else -}}
+  {{- .Title }} · {{ site.Params.author -}}
+{{- end -}}

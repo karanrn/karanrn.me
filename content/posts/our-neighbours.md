@@ -1,7 +1,7 @@
 ---
 title: "Our neighbours"
 date: 2018-05-24
-categories: ["life", "nostalgia"]
+categories: ["life"]
 ---
 It was fun when we used to gossip with our neighbors.
 

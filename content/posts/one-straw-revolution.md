@@ -1,7 +1,7 @@
 ---
 title: "One straw revolution"
 date: 2019-04-26
-categories: ["book", "life", "agriculture"]
+categories: ["life"]
 ---
 > “The ultimate goal of farming is not the growing of crops, but cultivation and perfection of human beings.”
 

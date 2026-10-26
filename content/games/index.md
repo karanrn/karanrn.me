@@ -1,4 +1,5 @@
 ---
+description: "Video games I have played, with ratings, and the setup I play on."
 title: games
 layout: games
 menu:

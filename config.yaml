@@ -16,6 +16,10 @@ permalinks:
   posts: /posts/:filename/
 
 params:
+  author: "Karan Nadagoudar"
+  description: "Karan Nadagoudar is a platform engineer at Nutanix, writing about technology and lessons from life."
+  # Default link-preview image; a page can override it with `image:` in front matter.
+  ogImage: "/images/og-default.jpg"
   BookTheme: "light"
   BookToC: false
   BookRepo: https://github.com/karanrn/karanrn.me

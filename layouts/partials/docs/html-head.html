@@ -1,6 +1,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{{ default .Summary .Description }}">
+{{- /* Front matter `description`, else the summary cut to search-snippet length. */ -}}
+{{- $desc := .Description | default (.Summary | plainify | htmlUnescape | strings.TrimSpace | truncate 160) | default site.Params.description -}}
+{{- $desc = replaceRE `\s+` " " $desc -}}
+{{- /* Front matter `image` (a static path), else the site-wide default. */ -}}
+{{- $image := .Params.image | default site.Params.ogImage | absURL -}}
+<meta name="description" content="{{ $desc }}">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark">
 
@@ -8,9 +13,23 @@
   <meta http-equiv="Refresh" content="0; url='{{ . }}'" />
 {{- end -}}
 
-{{- template "_internal/opengraph.html" . -}}
-
 <title>{{ partial "docs/html-head-title" . }}</title>
+
+{{- /* Open Graph / Twitter cards for link previews (replaces _internal/opengraph.html,
+       whose og:description is the untruncated summary). */}}
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Params.author }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:locale" content="en_US">
+{{- if and .IsPage (eq .Section "posts") }}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- else }}
+<meta property="og:type" content="website">
+{{- end }}
+<meta name="twitter:card" content="{{ if .Params.image }}summary_large_image{{ else }}summary{{ end }}">
 
 {{- $manifest := resources.Get "manifest.json" | resources.ExecuteAsTemplate "manifest.json" . }}
 <link rel="manifest" href="{{ $manifest.RelPermalink }}">

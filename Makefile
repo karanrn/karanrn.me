@@ -25,7 +25,7 @@ post:
 	@if [ -z "$(strip $(title))" ]; then echo 'usage: make post <title>'; exit 1; fi
 	@file="$(POSTS_DIR)/$(slug).md"; \
 	if [ -e "$$file" ]; then echo "$$file already exists"; exit 1; fi; \
-	printf -- '---\ntitle: "%s"\ndate: %s\ncategories: []\ndraft: true\n---\n' \
+	printf -- '---\ntitle: "%s"\ndate: %s\ndescription: ""\ncategories: []\ndraft: true\n---\n' \
 		'$(yaml_title)' "$$(date +%Y-%m-%d)" > "$$file"; \
 	echo "created $$file"
 

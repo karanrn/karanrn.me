@@ -1,4 +1,5 @@
 ---
+description: "About Karan Nadagoudar, a platform engineer at Nutanix working on Kubernetes as a platform."
 menu:
   after:
     name: about
