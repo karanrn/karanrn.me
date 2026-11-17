@@ -42,11 +42,13 @@
       <footer class="book-footer">
         {{ template "footer" . }} <!-- Footer under page content -->
         {{ partial "docs/inject/footer" . }}
-        Copyright &copy; {{ dateFormat "2006" now}} <a href="/">Karan Nadagoudar</a>
-        <nav class="footer-links" aria-label="Elsewhere">
-          <a href="https://github.com/karanrn/karanrn.me" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/knadagoudar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </nav>
+        <div class="footer-bar">
+          <nav class="footer-links" aria-label="Elsewhere">
+            <a href="https://github.com/karanrn/karanrn.me" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/knadagoudar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </nav>
+          <span class="footer-copyright">Copyright &copy; {{ dateFormat "2006" now}} <a href="/">Karan Nadagoudar</a></span>
+        </div>
       </footer>
 
       {{ template "comments" . }} <!-- Comments block -->
