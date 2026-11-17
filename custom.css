@@ -501,3 +501,14 @@ aside nav ul li a {
         gap: 2px;
     }
 }
+
+.footer-links {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.footer-links a {
+    font-size: 10pt;
+}
