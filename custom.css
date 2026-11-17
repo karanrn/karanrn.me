@@ -502,13 +502,24 @@ aside nav ul li a {
     }
 }
 
-.footer-links {
+/* Links on the left, copyright on the right; wraps onto two lines on narrow screens. */
+.footer-bar {
+    align-items: baseline;
+    color: #514e4e;
     display: flex;
-    gap: 18px;
-    justify-content: center;
-    margin-top: 6px;
+    flex-wrap: wrap;
+    font-size: 9pt;
+    gap: 8px 18px;
+    justify-content: space-between;
+    text-align: left;
 }
 
-.footer-links a {
-    font-size: 10pt;
+.footer-links {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-bar a {
+    font-size: 9pt;
+    line-height: 1.4;
 }
