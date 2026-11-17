@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $books := site.Data.books }}
+{{ $books := hugo.Data.books }}
 <article class="markdown books-page">
   {{ with $books.reading }}
   <h2>currently reading</h2>

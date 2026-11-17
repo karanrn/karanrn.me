@@ -4,8 +4,8 @@ GOODREADS_USER := 37190680
 
 # Keep in sync with hugo-version in .github/workflows/gh-pages.yaml.
 HUGO_VERSION := 0.168.0
-# Oldest Hugo with css.Sass, which layouts/partials/docs/html-head.html needs.
-HUGO_MIN_VERSION := 0.128.0
+# Oldest Hugo with hugo.Data and Language.Locale (css.Sass, used by html-head.html, needs 0.128).
+HUGO_MIN_VERSION := 0.158.0
 
 # Everything after `post` on the command line is the title: `make post My New Post`.
 # `make post title="My New Post"` also works.

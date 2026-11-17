@@ -3,6 +3,13 @@
 profile: https://www.goodreads.com/user/show/37190680
 reading: []
 read:
+- title: Animal Farm
+  author: George Orwell
+  url: https://www.goodreads.com/book/show/170448
+  rating: 4
+  read: '2026-10-26'
+  added: '2026-10-25'
+  year: '2026'
 - title: 80/20 Running
   subtitle: Run Stronger and Race Faster by Training Slower
   author: Matt Fitzgerald

@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="markdown games-page">
-  {{ $favorites := where site.Data.games "favorite" true }}
+  {{ $favorites := where hugo.Data.games "favorite" true }}
   {{ with $favorites }}
   <h2>favorite games</h2>
   <ul class="games games-favorites">
@@ -10,7 +10,7 @@
 
   <h2>played</h2>
   <ol class="games">
-    {{ range site.Data.games }}{{ partial "game-card" (dict "game" . "sizes" "(max-width: 40rem) 30vw, 140px") }}{{ end }}
+    {{ range hugo.Data.games }}{{ partial "game-card" (dict "game" . "sizes" "(max-width: 40rem) 30vw, 140px") }}{{ end }}
   </ol>
   {{- .Content -}}
 </article>

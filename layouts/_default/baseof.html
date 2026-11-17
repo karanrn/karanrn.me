@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+<html lang="{{ default .Site.Language.Lang .Site.Language.Locale}}" dir="{{ default "ltr" .Site.Language.Direction }}">
 <head>
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
@@ -15,7 +15,7 @@
 
   gtag('config', 'G-QSDLPEQXJ5');
 </script>
-<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+<body dir="{{ default "ltr" .Site.Language.Direction }}">
   <header class="site-header">
     <a class="site-title" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
     <nav class="site-nav" aria-label="Primary navigation">

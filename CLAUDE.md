@@ -16,7 +16,7 @@ Personal blog (karanrn.me) built with Hugo, using the `hugo-book` theme with hea
 
 There are no tests or linters; verify changes by building and viewing the site.
 
-CI (`.github/workflows/gh-pages.yaml`) pins Hugo extended to the same version as `HUGO_VERSION` in the Makefile, so keep the two in sync. Hugo before 0.128 won't work because the head partial uses `css.Sass`.
+CI (`.github/workflows/gh-pages.yaml`) pins Hugo extended to the same version as `HUGO_VERSION` in the Makefile, so keep the two in sync. Hugo before 0.158 won't work: layouts use `hugo.Data` and `Language.Locale` (and the head partial uses `css.Sass`, from 0.128).
 
 ## Deployment
 
